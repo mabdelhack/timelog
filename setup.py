@@ -9,7 +9,7 @@ setup(
   long_description_content_type = "text/markdown",
   packages = ['timelog'],   # Chose the same as "name"
   package_dir={'timelog': 'timelog'},
-  version = '0.5',      # Start with a small number and increase it with every change you make
+  version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A lightweight timestring generator for logging',   # Give a short description about your library
   author = 'Mohamed Abdelhack',                   # Type in your name
