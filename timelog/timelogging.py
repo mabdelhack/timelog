@@ -1,7 +1,7 @@
 import datetime as tm
 
 
-def timelog(time='now', fmt=None):
+def timelogging(time='now', fmt=None):
     """Creates a timelog for your logging needs. If you don't provide time it uses current time. If you don't
     provide a format it uses [year][month][day]_[hour][minute]. If you want your own format, you can either use the
     datetime library format or you can use one of the following options [year2second, month2second, month2minute,
@@ -29,7 +29,7 @@ def timelog(time='now', fmt=None):
 
 
 if __name__ == '__main__':
-    print(timelog())
-    print(timelog(fmt='month2minute'))
-    print(timelog(time=tm.datetime.strptime('18/09/19 01:55:19', '%d/%m/%y %H:%M:%S'), fmt="%Y%m%d_%H%M%S"))
-    print(timelog(time=tm.datetime.strptime('18/09/20', '%d/%m/%y'), fmt="%Y%m%d"))
+    print(timelogging())
+    print(timelogging(fmt='month2minute'))
+    print(timelogging(time=tm.datetime.strptime('18/09/19 01:55:19', '%d/%m/%y %H:%M:%S'), fmt="%Y%m%d_%H%M%S"))
+    print(timelogging(time=tm.datetime.strptime('18/09/20', '%d/%m/%y'), fmt="%Y%m%d"))
